@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background: #222;
+    display: flex;
+    align-items: center;
+
+}
+
+.page .app {
+    width: 1396px;
+    min-width: 500px;
+    height: 95%;
+    background: #f7f9fa;
+    margin: auto;
+    display: flex;
+}
+
+.page .app .side {
+    width: 30%;
+    min-width: 300px;
+    background: #fff;
+    height: 100%;
+    border-right: #ddd 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.page .app .side .header {
+    height: 60px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.page .app .side .header-logo {
+    display: flex;
+    flex: 1;
+}
+
+.page .app .side .header-logo img {
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.page .app .side .header .header-buttons ul {
+    display: flex;
+}
+
+.page .app .side .header .header-buttons ul li {
+    width: 50px;
+    text-align: center;
+}
+
+.page .app .side .header .header-buttons ul li a {
+    font-size: 21px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.page .app .side .search {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    border-bottom: #ddd 1px solid;
+
+}
+
+.page .app .side .search .search-bar {
+    width: 95%;
+    height: 40px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.page .app .side .search .search-bar input[type="text"] {
+    width: 100%;
+    height: 85%;
+}
+
+.page .app .side .search .search-bar input[type="text"]::placeholder {
+    color: #a0a0a0;
+}
+
+.page .app .side .search .search-bar .search-icon {
+    width: 50px;
+    height: 85%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.page .app .side .search .search-bar .search-icon svg {
+    margin: auto;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.page .app .side .contacts {
+    width: 100%;
+    overflow: auto;
+    flex: 1;
+}
+
+.page .app .side .contacts .contact {
+    width: 100%;
+    height: 72px;
+    border-bottom: #ddd 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.page .app .side .contacts .contact:active {
+    background: #e9ebeb;
+}
+
+.page .app .side .contacts .contact .contact-img {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.page .app .side .contacts .contact .contact-img img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.page .app .side .contacts .contact .contact-info {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.page .app .side .contacts .contact .contact-info .contact-name {
+    color: #000;
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: 400;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.page .app .side .contacts .contact .contact-info .contact-message {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.page .app .side .contacts .contact .contact-seen {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .4);
+}
+
+.page .app .content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.page .app .content .card {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+.page .app .content .card img {
+    margin: 0 auto;
+}
+
+.page .app .content .card .card-title {
+    font-size: 32px;
+    font-weight: 100;
+    color: #4b5961;
+    margin-top: 28px;
+}
+
+.page .app .content .card .card-text {
+    font-size: 14px;
+    color: #929fa6;
+    line-height: 20px;
+    margin-top: 18px;
+}
+
+.page .app .content .card .card-tip {
+    font-size: 14px;
+    width: 100%;
+    color: #929fa6;
+    line-height: 20px;
+    padding-top: 34px;
+    margin-top: 34px;
+    border-top: 1px solid #e1e9eb;
+}
+
+.page .app .content .card .card-tip svg {
+    margin-right: 5px;
+}
+
+.page .app .content .card .card-tip a {
+    color: #07bc4c;
+}
